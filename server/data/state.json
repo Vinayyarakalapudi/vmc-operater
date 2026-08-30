@@ -3,10 +3,10 @@
     "id": "OP-204",
     "name": "J. Alvarez",
     "pin": "4471",
-    "loggedIn": true
+    "loggedIn": false
   },
   "job": {
-    "operation": "Bracket Machining — OP20 Face & Drill",
+    "operation": "Bracket Machining \u2014 OP20 Face & Drill",
     "partNumber": "BRK-1042",
     "quantity": 25,
     "material": "Aluminum 6061-T6",
@@ -15,97 +15,28 @@
     "fixture": "Vise Fixture VF-12",
     "workOffset": "G54"
   },
-  "poweredOn": true,
-  "stage": "OPERATION",
+  "poweredOn": false,
+  "stage": "POWER_ON",
   "operationStatus": "STOPPED",
   "machineChecks": [
-    {
-      "id": "power",
-      "label": "Power / control available",
-      "confirmed": true
-    },
-    {
-      "id": "estop",
-      "label": "E-stop released",
-      "confirmed": true
-    },
-    {
-      "id": "guard",
-      "label": "Guard / door closed",
-      "confirmed": true
-    },
-    {
-      "id": "alarm",
-      "label": "No active alarm",
-      "confirmed": true
-    },
-    {
-      "id": "lube",
-      "label": "Lubrication / coolant ready",
-      "confirmed": true
-    },
-    {
-      "id": "ref",
-      "label": "Reference return complete",
-      "confirmed": true
-    }
+    { "id": "power", "label": "Power / control available", "confirmed": false },
+    { "id": "estop", "label": "E-stop released", "confirmed": false },
+    { "id": "guard", "label": "Guard / door closed", "confirmed": false },
+    { "id": "alarm", "label": "No active alarm", "confirmed": false },
+    { "id": "lube", "label": "Lubrication / coolant ready", "confirmed": false },
+    { "id": "ref", "label": "Reference return complete", "confirmed": false }
   ],
   "tools": [
-    {
-      "id": "T01",
-      "type": "Face Mill Ø50mm",
-      "programRev": "O1042 Rev C",
-      "confirmed": true
-    },
-    {
-      "id": "T02",
-      "type": "Drill Ø8.5mm",
-      "programRev": "O1042 Rev C",
-      "confirmed": true
-    },
-    {
-      "id": "T03",
-      "type": "Tap M10 x 1.5",
-      "programRev": "O1042 Rev C",
-      "confirmed": true
-    },
-    {
-      "id": "T04",
-      "type": "End Mill Ø12mm 4FL",
-      "programRev": "O1042 Rev C",
-      "confirmed": true
-    }
+    { "id": "T01", "type": "Face Mill \u00d850mm", "programRev": "O1042 Rev C", "confirmed": false },
+    { "id": "T02", "type": "Drill \u00d88.5mm", "programRev": "O1042 Rev C", "confirmed": false },
+    { "id": "T03", "type": "Tap M10 x 1.5", "programRev": "O1042 Rev C", "confirmed": false },
+    { "id": "T04", "type": "End Mill \u00d812mm 4FL", "programRev": "O1042 Rev C", "confirmed": false }
   ],
   "workpiece": [
-    {
-      "id": "fixture",
-      "label": "Fixture",
-      "detail": "Vise Fixture VF-12, jaw set B",
-      "confirmed": true
-    },
-    {
-      "id": "orientation",
-      "label": "Workpiece orientation",
-      "detail": "Datum face A against fixed jaw, pin-located on Datum B",
-      "confirmed": true
-    },
-    {
-      "id": "clamping",
-      "label": "Clamping instruction",
-      "detail": "Torque vise to 40 Nm, verify no lift at parting line",
-      "confirmed": true
-    },
-    {
-      "id": "material",
-      "label": "Material / drawing revision",
-      "detail": "Aluminum 6061-T6, Drawing Rev C",
-      "confirmed": true
-    },
-    {
-      "id": "offset",
-      "label": "Work offset",
-      "detail": "G54 — set from datum corner, Z from fixture top",
-      "confirmed": true
-    }
+    { "id": "fixture", "label": "Fixture", "detail": "Vise Fixture VF-12, jaw set B", "confirmed": false },
+    { "id": "orientation", "label": "Workpiece orientation", "detail": "Datum face A against fixed jaw, pin-located on Datum B", "confirmed": false },
+    { "id": "clamping", "label": "Clamping instruction", "detail": "Torque vise to 40 Nm, verify no lift at parting line", "confirmed": false },
+    { "id": "material", "label": "Material / drawing revision", "detail": "Aluminum 6061-T6, Drawing Rev C", "confirmed": false },
+    { "id": "offset", "label": "Work offset", "detail": "G54 \u2014 set from datum corner, Z from fixture top", "confirmed": false }
   ]
 }
